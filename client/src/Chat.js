@@ -17,7 +17,7 @@ function Chat({ socket, username, roomID, connection }) {
     const messageData = {
       username,
       roomID,
-      message: convertToHTML(editorState.getCurrentContent()),
+      message,
       time: new Date().getHours() + ":" + new Date().getMinutes(),
     };
     await socket.emit("send_message", messageData);
