@@ -1,0 +1,43 @@
+/* #body {
+  flex-direction: column;
+} */
+.App {
+  background-color: #282c34;
+  height: 100vh;
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  flex: 1;
+}
+#body {
+  flex: 8;
+}
+#footer {
+  flex: 3;
+}
+.messageContainer {
+  display: "flex";
+  flex-direction: row;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  background-color: rgb(171, 218, 200);
+  /* border: 1px solid red; */
+}
+.messageBox {
+  margin: 1em 0.25em;
+  max-width: 75%;
+  min-width: 25%;
+  padding: 1vw;
+  background-color: rgb(88, 171, 234);
+}
+
+.sendButton {
+  flex: 1;
+  border-bottom-right-radius: 5px;
+  border-width: 0px;
+  background-color: darkgreen;
+}
